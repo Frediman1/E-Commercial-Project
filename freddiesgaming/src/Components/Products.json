@@ -1,0 +1,77 @@
+[
+    {
+        "image": "./Project%20Images/NBA%202k21.jpg",
+        "name": "NBS 2k21-Playstation 4",
+        "price": "$59.99"
+    },
+    {
+        "image": "./Project%20Images/fifa%2021%20new.jpg",
+        "name": "Fifa 21",
+        "price": "$59.99"
+    },
+    {
+        "image": "./Project%20Images/Spider%20man%20.jpg",
+        "name": "Marvel's Spider-Man: Miles Morales Launge Edition-Playstation 5",
+        "price": "$59.99"
+    },
+    {
+        "image": "./Project%20Images/WII%20Console.jpg",
+        "name": "Nintendo Wii Console, Black with New Super Mario Bros Wii (Renewed)",
+        "price": "$273.99"
+    },
+    {
+        "image": "./Project%20Images/xbox%20controller%20.jpg",
+        "name": "Xbox Wirelesss Controller-Shock Blueby Microsoft- Xbox one",
+        "price": "$64.00"
+    },
+    {
+        "image": "./Project%20Images/xbox%20series%20x.jpg",
+        "name": "Xbox Series Xby microsoft",
+        "price": "$499.99"
+    },
+    {
+        "image": "./Project%20Images/Playstation%20classic.jpg",
+        "name": "Sony Playstation Classic-Playstation",
+        "price": "$74.99"
+    },
+    {
+        "image": "./Project%20Images/PS5%20Digital.jpg",
+        "name": "Sony Playstation 5 Digital Edition by Playstation",
+        "price": "$399.99"
+    },
+    {
+        "image": "./Project%20Images/PS5%20disk.jpg",
+        "name": "Sony Playstation 5 Console by Playstation",
+        "price": "$499.99"
+    },
+    {
+        "image": "./Project%20Images/Assasins%20Greed%20.jpg",
+        "name": "Assasin's Creed Valhalla-Playstation 5 by Ubisoft",
+        "price": "$65.99"
+    },
+    {
+        "image": "./Project%20Images/Call%20of%20Duty%20.jpg",
+        "name": "Call of Duty: Black Ops Cold War by ACTIVITION",
+        "price": "$69.99"
+    },
+    {
+        "image": "./Project%20Images/Dual%20sense.jpg",
+        "name": "DualSens Wireless Controller by Playstation",
+        "price": "$69.99"
+    },
+    {
+        "image": "./Project%20Images/Gaming_desktop_itel.jpg",
+        "name": "iBUYPOWER - Gaming Desktop - Intel i5-10400F - 8GB Memory - NVIDIA GeForce GTX 1050Ti 4GB - 240GB SSD + 1TB HDD",
+        "price": "$699.99"
+    },
+    {
+        "image": "./Project%20Images/Gaming_Keypad.jpg",
+        "name": "CORSAIR - K55 Wired Gaming Membrane Keyboard with RGB Backlighting - Black",
+        "price": "$49.99"
+    },
+    {
+        "image": "./Project%20Images/Gaming_Monitor.jpg",
+        "name": "LG - UltraGear 27 IPS LED QHD FreeSync and G-SYNC Compatable Monitor with HDR (DisplayPort, HDMI) - Black",
+        "price": "$399.99"
+    }
+]

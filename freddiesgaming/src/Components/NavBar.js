@@ -1,27 +1,31 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const navBar = () => {
     return (
-        <div>
-            <div className="navbar">
 
-                <div className="logo">
-                    <img src="../Project Images/Ecom Logo.jpeg" width="125" alt="Designed logo" />
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Product.html">Products</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
+        <div className="navbar">
 
 
-                    <img src="../Project Images/shopping cart.png" width="30" height="20" alt="cart" />
+            <nav>
 
-                </nav>
-            </div>
+                <img src="./Project Images/Ecom Logo.jpeg" width="125" alt="Designed logo" />
+
+                <ul>
+                    <Link to="/home"> <li><a href="HomePage">Home</a></li></Link>
+                    <Link to="/products"> <li><a href="Products">Products</a></li></Link>
+                    <Link to="/contact"><li><a href="Contact">Contact</a></li></Link>
+                </ul>
+
+
+
+
+
+
+            </nav>
         </div>
+
     )
 }
 export default navBar;

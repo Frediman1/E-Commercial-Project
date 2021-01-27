@@ -1,26 +1,33 @@
 import React from 'react'
-
+import SimpleSlider from './Slider'
+// import SimpleSlider from './Slider'
+// import SimpleImageSlider from 'react-simple-image-slider'
+// import Slider from './Slider'
 
 const homePage = () => {
+
     return (
         <div>
-            <div className="navbar">
+            <section>
+                <div className="hero-image">
+                    <div className="hero-text">
+                        <div className="hero-container">
 
-                <div className="logo">
-                    <img src="./Project%20Images/Ecom%20Logo.jpeg" width="125" alt="Designed logo" />
+                            <h1>Your Go To For<br /> All Things Gaming</h1>
+                            <p> Introvert or Extrovert we all love Entertainment and Games
+
+                    </p>
+                        </div>
+
+                    </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Product.html">Products</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
+            </section>
+
+            <section>
+                <SimpleSlider />
+            </section>
 
 
-                    <img src="./Project%20Images/shopping%20cart.png" width="30" height="20" alt="cart" />
-
-                </nav>
-            </div>
         </div>
     )
 }
