@@ -13,8 +13,8 @@ const homePage = () => {
                     <div className="hero-text">
                         <div className="hero-container">
 
-                            <h1>Your Go To For<br /> All Things Gaming</h1>
-                            <p> Introvert or Extrovert we all love Entertainment and Games
+                            <h1>Your Go-To For<br /> All Things Gaming</h1>
+                            <p> Introvert or Extrovert, We All Love Entertainment and Games
 
                     </p>
                         </div>
@@ -23,7 +23,8 @@ const homePage = () => {
                 </div>
             </section>
 
-            <section>
+            <section className="bbb">
+                <h1>Coming Soon <br /> on <br /> Freddies Gaming</h1><br />
                 <SimpleSlider />
             </section>
 

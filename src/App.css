@@ -48,6 +48,7 @@ nav ul {
   display: inline-block;
   list-style-type: none;
   margin: 5px;
+  margin-bottom: 2px;
 }
 
 nav ul li {
@@ -79,6 +80,10 @@ a {
   padding: 9px 14px;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+a:hover {
+  color: burlywood
 }
 
 p {
@@ -176,6 +181,10 @@ p {
   right: 10%;
 }
 
+.bbb h1 {
+  align-items: center;
+}
+
 /* Product css */
 
 .Products {
@@ -208,21 +217,67 @@ p {
 }
 
 .yes {
-  font-size: 30px;
+  /* font-size: 30px;
+  width: 600px; */
   width: 600px;
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(200, 234, 238);
+  color: #202020;
+  border-radius: 16px 0 16px 0;
+  border-bottom: 3px solid rgb(158, 158, 158);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .small-container1 {
   width: 100%;
   margin: auto;
   padding-left: 25px;
-  padding-right: 250px;
+  /* padding-right: 250px; */
   display: inline-block;
 }
 
 @media all and (max-width:672px) {
   .small-container1, .small-container2, .small-container3 {
     width: 88%;
+  }
+}
+
+@media (min-width:540px) {
+  .footer {
+    padding-right: 1340px;
+  }
+}
+
+@media (max-width:540px) {
+  nav ul {
+    display: block;
+    color: black
+  }
+  .small-container1, .small-container2, .small-container3 {
+    width: 88%;
+    padding-right: 0px;
+  }
+  nav {
+    background-color: #06356e;
+  }
+  ul a {
+    display: block;
+  }
+  ul {
+    background-color: #06356e;
+  }
+  nav img {
+    margin-top: 10px;
+    height: 333px;
+    width: 238px;
+  }
+  .yes {
+    width: 300px;
   }
 }
 
@@ -279,4 +334,10 @@ footer {
   color: black;
   font-size: 20px;
   margin: 10px;
+}
+
+/* css for stars */
+
+.rating {
+  color: gold
 }

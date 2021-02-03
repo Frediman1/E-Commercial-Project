@@ -10,7 +10,7 @@ const Product = (props) => {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star-half-o"></i>
             </div>
-            <p>{props.price}</p>
+            <p>  ${props.price}</p>
             <button className="mycart">
                 <span>Add to Cart</span>
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>

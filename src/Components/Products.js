@@ -4,20 +4,53 @@ import ProductsJson from './Products.json'
 import Product from './Product'
 // import filter from './Filter'
 
+const stringToNumber = (str) => {
+    return parseFloat(str.replace(/[^0-9.]/g, ''));
+}
+
+const sortAscPrice = (a, b) => {
+    if (a.price < b.price) {
+        return -1;
+    }
+    if (a.price > b.price) {
+        return 1;
+    }
+    // a must be equal to b
+    return 0;
+}
+const sortDescPrice = (a, b) => {
+    if (a.price > b.price) {
+        return -1;
+    }
+    if (a.price < b.price) {
+        return 1;
+    }
+    // a must be equal to b
+    return 0;
+}
+
 const Products = () => {
     const [productFilterValue, updateProductFilterValue] = useState('')
-    const productComponents = ProductsJson.filter((val) => {
+    const [productSortValue, updateProductSortValue] = useState('')
+    console.log('sort = ', productSortValue)
+    const filteredProducts = ProductsJson.filter((val) => {
         if (productFilterValue === "") {
             return true
         } else if (val.name.toLowerCase().includes(productFilterValue.toLowerCase())) {
             return true
-        } else if (val.price.toLowerCase().includes(productFilterValue.toLowerCase())) {
+        } else if (val.price === stringToNumber(productFilterValue)) {
             return true
         } else if (val.image.toLowerCase().includes(productFilterValue.toLowerCase())) {
             return true
         }
         return false
-    }).map((val, key) => {
+    })
+    if (productSortValue === 'price_asc') {
+        filteredProducts.sort(sortAscPrice)
+    } else if (productSortValue === 'price_desc') {
+        filteredProducts.sort(sortDescPrice)
+    }
+    const productComponents = filteredProducts.map((val, key) => {
         return (
             <Product key={key} {...val} />
         );
@@ -32,11 +65,11 @@ const Products = () => {
                     updateProductFilterValue(value)
                 }} />
                 {/* <label> <input type="text" name="Search" placeholder="Search Products" /></label> */}
-                <select id="price">
+                <select id="price" onChange={e => updateProductSortValue(e.target.value)}>
 
-                    <option>Default Sorting</option>
-                    <option>Sort by Price</option>
-                    <option>Sort by Rating</option>
+                    <option value="">Default Sorting</option>
+                    <option value="price_asc">Sort by Price, Ascending</option>
+                    <option value="price_desc">Sort by Price, Descending</option>
 
                 </select>
 
